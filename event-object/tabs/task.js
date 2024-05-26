@@ -2,7 +2,7 @@ const tabs = Array.from(document.getElementsByClassName('tab'));
 const contents = Array.from(document.getElementsByClassName('tab__content'));
 
 tabs.forEach(tab => {
-    tab.addEventListener('click', function () {
+    tab.addEventListener('click', () => {
         let index = tabs.indexOf(tab)
         for (let i = 0; i < tabs.length; i++) {
             tabs[i].classList.remove("tab_active");
